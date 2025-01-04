@@ -15,6 +15,9 @@ type Book struct {
 }
 
 // 주석 추가 ---
+// HMbranch
+// 수수수수수정
+
 // 메모리에 저장할 예시 데이터
 var books = []Book{
 	{ID: 1, Title: "Gin Framework", Author: "Gin Devs"},
@@ -37,6 +40,7 @@ func main() {
 		c.JSON(http.StatusCreated, newBook)
 	})
 
+	// feat/log 브랜치에서 추가된 코드
 	// Read (GET /books) - 전체 조회
 	r.GET("/books", func(c *gin.Context) {
 		c.JSON(http.StatusOK, books)
