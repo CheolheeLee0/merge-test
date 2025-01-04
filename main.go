@@ -36,6 +36,7 @@ func main() {
 		c.JSON(http.StatusCreated, newBook)
 	})
 
+	// feat/log 브랜치에서 추가된 코드
 	// Read (GET /books) - 전체 조회
 	r.GET("/books", func(c *gin.Context) {
 		c.JSON(http.StatusOK, books)
