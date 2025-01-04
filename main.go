@@ -37,6 +37,7 @@ func main() {
 	})
 
 	// Read (GET /books) - 전체 조회
+	//주석추가함 나영
 	r.GET("/books", func(c *gin.Context) {
 		c.JSON(http.StatusOK, books)
 	})
