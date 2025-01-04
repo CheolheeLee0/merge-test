@@ -14,6 +14,7 @@ type Book struct {
 	Author string `json:"author"`
 }
 
+// 주석 추가 ---
 // 메모리에 저장할 예시 데이터
 var books = []Book{
 	{ID: 1, Title: "Gin Framework", Author: "Gin Devs"},
